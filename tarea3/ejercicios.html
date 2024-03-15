@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Place | Ejercicios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+  <header >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="index.html"><img class="logoBlanco" src="images/logogymblanco.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-auto me-5" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="membresias.html">Membresías</a> <!-- RETO 5 -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clases.html">Clases</a> <!-- RETO 4-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="ejercicios.html">Ejercicios</a> <!-- RETO 7-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="buscador.html">Sucursales</a> <!-- RETO 10 -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calzado.html">Calzado</a> <!-- RETO 6-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aliados.html">Convenios</a> <!-- RETO 3  -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="facturacion.html">Facturación</a> <!-- RETO 2 -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="retofit.html">#RetoFit</a> <!-- RETO 8-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Iniciar sesión</a> <!-- RETO 1 -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="formulario.html">Información</a> <!-- RETO 9 -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+    <section class="container mt-5 mb-5">
+            <div class="row">
+              <div class="col-md-12 col-lg-12">
+                <div class="col-md-12 col-lg-12">
+                    <h1 class="titulo1 text-center">Descanso y ejercicio para cada músculo</h1>
+                    <p class="text-center">Cada parte de tu cuerpo cumple una función distinta, por lo que todos los músculos son diferentes requieren distintos ejercicios y tiempo de recuperación</p>
+                </div>
+                <div class="text-center pt-3">
+                    <img src="images/Fotoconnumeros.jpg" usemap="#image-map" class="img-fluid shadow img-thumbnail" alt="Partes del cuerpo según músculos">
+                    <map name="image-map">
+                        <area id="r1" alt="Click por favor" title="Click por favor" coords="313,223,44" shape="circle" class="cursor">
+                        <area id="r2" alt="Click por favor" title="Click por favor" coords="450,235,44" shape="circle" class="cursor">
+                        <area id="r3" alt="Click por favor" title="Click por favor" coords="632,97,44" shape="circle" class="cursor">
+                        <area id="r4" alt="Click por favor" title="Click por favor" coords="633,278,44" shape="circle" class="cursor">
+                        <area id="r5" alt="Click por favor" title="Click por favor" coords="788,375,44" shape="circle" class="cursor">
+                    </map>
+                </div>
+                
+            </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="footer-container-contact">
+          <div>
+            <p>© 2024 Derechos reservados</p>
+          </div>
+        </div>
+        <div class="footer-container-contact">
+            <div> 
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+                <p>fitnessplacecr@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-container-contact">
+            <div>
+                <a class="footer-container-contact" href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-lg"></i></a>  
+            </div>
+            <div>
+                <a class="footer-container-contact" href="https://www.facebook.com"><i class="fa-brands fa-square-facebook fa-lg"></i></a>
+            </div>
+            <div>
+                <a class="footer-container-contact" href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="js/jquery.rwdImageMaps.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/desplegables.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+</html>
