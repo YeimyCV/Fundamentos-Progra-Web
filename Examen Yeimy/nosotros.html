@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Nosotros</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="gimnasiofavicon.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/personal.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand ms-5" href="index.html"><img class="logoBlanco" src="images/logogymblanco.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse ms-auto me-5" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reto1.html">RETO 1</a> <!-- RETO 1 -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reto2.html">RETO 2</a> <!-- RETO 2 -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reto3.html">RETO 3</a> <!-- RETO 3  -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reto4.html">RETO 4</a> <!-- RETO 4-->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reto5.html">RETO 5</a> <!-- RETO 5 -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reto6.html">RETO 6</a> <!-- RETO 6-->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reto7.html">RETO 7</a> <!-- RETO 7-->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reto8.html">RETO 8</a> <!-- RETO 8-->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reto9.html">RETO 9</a> <!-- RETO 9 -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reto10.html">RETO 10</a> <!-- RETO 10 -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <h1>Fitness Place</h1>
+            <p class="container pt-3">
+                Desde hace ya 20 años Fitness Place es un lugar seguro y motivador para que las personas realicen actividad física de todo tipo, te invitamos a conocer más de esta empresa al servicio de la salud y el bienestar. 
+            </p>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="pt-5">
+                        <img id="foto" src="images/fotolightbox.jpg" alt="Equipo Fitness Place" style="max-width:600px">
+                        <div id="modal1" class="modal">
+                            <div class="close">&times;</div>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <p class="container pt-5">
+                        Somos un equipo de profesionales altamente preparados y calificados en ciencias del movimiento humano, a través de los años nos hemos fortalecido como grupo, enfocados en ofrecer el mejor servicio de acompañamiento y guía en tu experiencia de acondicionamiento físico. Nuestro equipo está integrado por personas, hombres y mujeres con distintos cuerpos, diferentes especialidades; pero ante todo nos une la pasión y el compromiso con la salud, más allá de la estética y los números, queremos que nuestros asociados se sientan cómodos y felices cada vez que vienen al gimnasio o toman una clase. 
+                    </p>
+                    <div class="pt-3"></div>
+                    <button id="boton" onclick="ejecutar('video','youtube')" class="cursor">Conócenos</button>
+                    <div id="video" class="lightbox" onclick="ocultar('video','youtube')">
+                        <div class="lightbox-container">
+                            <div class="lightbox-content">
+                                <button onclick="ocultar('video','youtube')" class="lightbox-close cursor">
+                            Cerrar | ✕
+                        </button>
+                                <div class="video-container">
+                                    <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/HP_l2yLg_WA" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tabs -->
+            <div class="pt-5"></div>
+            <div class="tab tam1">
+                <!-- funcion que recibe un controlador de eventos (event) y un ID que representa cada pestaña -->
+                <button class="tablinks" onclick="opciones(event, 'historia')"> Historia </button>
+                <button class="tablinks" onclick="opciones(event, 'mision')"> Misión </button>
+                <button class="tablinks" onclick="opciones(event, 'vision')"> Visión </button>
+                <button class="tablinks" onclick="opciones(event, 'equipo')"> Nuestro personal </button>
+                <button class="tablinks" onclick="opciones(event, 'servicios')"> Servicios </button>
+            </div>
+
+            <div id="historia" class="tabcontent">
+                <p>
+                    Iniciamos este proyecto en 2004, en un pequeño local en Guadalupe en el cantón de Goicoechea, con pocos recursos pero excelente personal y la mentalidad clara de expandirnos poco a poco, y ofrecer nuestros servicios a cada vez más personas. A lo largo de los años hemos ampliado nuestros servicios y locaciones en todo el país. El bienestar físico no es solo un número o el producto de acciones repetitivas, es también el disfrute del movimiento, el entusiasmo que genera el entorno y la motivación correcta.
+                </p>
+                <img src="images/staff.jpg" alt="historia" class="img-fluid">
+            </div>
+
+            <div id="mision" class="tabcontent">
+                <p class="text-left ">
+                    Ofrecer un gimnasio accesible y funcional, diseñado a la medida para diferentes personas y diversidad de gustos. Nuestra misión es atender a nuestros miembros con calidez, calidad y compromiso. Buscamos mejorar la calidad de vida, salud a través del deporte y el ejercicio bajo un lema de disfrute y no de obligación.
+ 
+                </p>
+                <img src="images/mision.jpg" alt="mision" class="img-fluid">
+            </div>
+
+            <div id="vision" class="tabcontent">
+                <p class="text-left ">
+                    Ser líder en Costa Rica de los gimnasios con alta calidad. Distinguirnos por un trato cercano, dando asesoría, entrenamiento con soporte metodológico y nuestro compromiso con los objetivos de nuestros socios.
+                </p>
+                <img src="images/vision.jpg" alt="vision" class="img-fluid">
+            </div>
+
+            <div id="equipo" class="tabcontent">
+              <p class="text-left ">
+                  Conoce a nuestro plantel de entrenadores y entrenadoras, el corazón de nuestra empresa. 
+              </p>
+              <div id="owl-demo" class="owl-carousel text-center">
+                <div class="item">
+                    <div class="">
+                        <img class="lazyOwl img-fluid rounded-circle" data-src="images/trainer3F.jpg" alt="yoga">
+                    </div>
+                    <div class="">
+                        <h4 class="">Inst. Yoga</h4>
+                        <p class="p1 text-center">
+                            Lucía tiene más de 25 años de practicar yoga, y 20 de enseñarlo, especialmente a personas mayores.
+                        </p>
+                    </div>
+                </div>
+  
+                <div class="item">
+                    <div class="">
+                        <img class="lazyOwl img-fluid rounded-circle" data-src="images/trainer4M.jpg" alt="yoga">
+                    </div>
+                    <div class="">
+                        <h4 class="">Inst. Yoga</h4>
+                        <p class="p1 text-center">
+                            Nassir cuenta con amplia experiencia en esta práctica. 
+                        </p>
+                    </div>
+                </div>
+  
+                <div class="item">
+                    <div class="">
+                        <img class="lazyOwl img-fluid rounded-circle" data-src="images/trainer2F.jpg" alt="crossfit">
+                    </div>
+                    <div class="">
+                        <h4 class="">Crossfit</h4>
+                        <p class="p1 text-center">
+                            Paula es campeona nacional de esta disciplina en rango élite.
+                        </p>
+                    </div>
+                </div>
+  
+                <div class="item">
+                    <div class="">
+                        <img class="lazyOwl img-fluid rounded-circle" data-src="images/trainer3M.jpg" alt="crossfit">
+                    </div>
+                    <div class="">
+                        <h4 class="">Crossfit</h4>
+                        <p class="p1 text-center">
+                            Mario es una de las personas que trajo este deporte a Costa Rica.
+                        </p>
+                    </div>
+                </div>
+  
+                <div class="item">
+                    <div class="">
+                        <img class="lazyOwl img-fluid rounded-circle" data-src="images/trainer1F.jpeg" alt="trainer">
+                    </div>
+                    <div class="">
+                        <h4 class="">Personal trainer</h4>
+                        <p class="p1 text-center">
+                            Adri es una de nuestras integrantes más multifacéticas. 
+                        </p>
+                    </div>
+                </div>
+  
+                <div class="item">
+                    <div class="">
+                        <img class="lazyOwl img-fluid rounded-circle" data-src="images/trainer2H.jpg" alt="trainer">
+                    </div>
+                    <div class="">
+                        <h4 class="">Personal trainer</h4>
+                        <p class="p1 text-center">
+                          Steven es licenciado en Ciencias del Movimiento Humano con amplia experiencia.
+                        </p>
+                    </div>
+                </div>
+  
+                <div class="item">
+                    <div class="">
+                        <img class="lazyOwl img-fluid rounded-circle" data-src="images/trainer4F.jpg" alt="spinning">
+                    </div>
+                    <div class="">
+                        <h4 class="">Spinning Pro</h4>
+                        <p class="p1 text-center">
+                            Camila es especialista en acondicionamiento y movilidad.
+                        </p>
+                    </div>
+                </div>
+  
+                <div class="item">
+                    <div class="">
+                        <img class="lazyOwl img-fluid rounded-circle" data-src="images/trainer5M.jpg" alt="spinning">
+                    </div>
+                    <div class="cau_left">
+                        <h4 class="">Spinning Pro</h4>
+                        <p class="p1 text-center">
+                            Luis Diego tiene 15 años de experiencia como instructor de spinning.
+                        </p>
+                    </div>
+                </div>
+  
+                <div class="item">
+                    <div class="">
+                        <img class="lazyOwl img-fluid rounded-circle" data-src="images/trainer5F.jpg" alt="boxeo">
+                    </div>
+                    <div class="">
+                        <h4 class="">Boxeo</h4>
+                        <p class="p1 text-center">
+                            Natalia es campeona de la división juvenil de boxeo femenino.
+                        </p>
+                    </div>
+                </div>
+  
+                <div class="item">
+                    <div class="">
+                        <img class="lazyOwl img-fluid rounded-circle" data-src="images/trainer1M.jpg" alt="boxeo">
+                    </div>
+                    <div class="">
+                        <h4 class="">Boxeo</h4>
+                        <p class="p1 text-center">
+                            Julio es nuestro fundador y leyenda del boxeo en Centroamérica.
+                        </p>
+                    </div>
+                </div>
+  
+              </div>
+            </div>
+
+            <div id="servicios" class="tabcontent">
+                <p class="text-left ">
+                    Conoce más sobre nuestros servicios:
+                    <div class="col-lg-12">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Elige una opción en el siguiente menú desplegable:</option>
+                          <option value="1">Clases disponibles</option>
+                          <option value="2">Membresías</option>
+                          <option value="3">Sucursales</option>
+                          </select>
+                      </div>
+                </p>
+            </div>
+
+            <div class="pt-5 "></div>
+            <!-- <p class="container pt-5">
+                Un gran número de estudios científicos soporta y respalda los beneficios que un ejercicio programado y regular otorga al organismo y se ha descrito a cabalidad cada una de las modificaciones favorables que se suceden en los distintos sistemas orgánicos, todo lo cual conduce a un funcionamiento integral óptimo del cuerpo humano, preservando en buenas condiciones su estructura y previniendo o retrasando la aparición de enfermedades especialmente aquéllas de tipo degenerativo.
+            </p> -->
+            <p class="container pt-5">
+              Contamos con alianzas comerciales en beneficio de nuestros miembros, programas de descuentos, servicios especiales y mucho más.
+            </p>
+            <div class="container text-center">
+              <p>
+                  <img src="images/convenios.jpg" name="thumb" class="img-fluid"> <br><br>
+                  <a href="#" id="titulo">Convenios empresariales</a>
+              </p>
+              <p class="pt-5 ">
+                  <button class="btn btn-primary btn-lg" onclick="cambiar(-1)">Anterior</button>
+                  <button class="btn btn-primary btn-lg" onclick="cambiar(1)">Siguiente</button>
+              </p>
+          </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL " crossorigin="anonymous "></script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+          items: 4,
+          lazyLoad: true,
+          autoPlay: true,
+          navigation: true, 
+          navigationText: ["", ""],
+          rewindNav: true,
+          scrollPerPage: false, 
+          pagination: false,
+          paginationNumbers: false,
+        });
+      });
+    </script>
+    <script src="js/nosotros.js "></script>
+    <script src="js/tirafotos.js "></script>
+    <script src="js/servicios.js "></script>
+
+</body>
+
+</html>

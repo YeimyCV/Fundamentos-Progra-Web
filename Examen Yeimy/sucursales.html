@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fitness Place | Sucursales</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.png">
+    </head>
+
+
+<body>
+  <header >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="index.html"><img class="logoBlanco" src="images/logogymblanco.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-auto me-5" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reto1.html">RETO 1</a> <!-- RETO 1 -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reto2.html">RETO 2</a> <!-- RETO 2 -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reto3.html">RETO 3</a> <!-- RETO 3  -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reto4.html">RETO 4</a> <!-- RETO 4-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reto5.html">RETO 5</a> <!-- RETO 5 -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reto6.html">RETO 6</a> <!-- RETO 6-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reto7.html">RETO 7</a> <!-- RETO 7-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reto8.html">RETO 8</a> <!-- RETO 8-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reto9.html">RETO 9</a> <!-- RETO 9 -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="reto10.html">RETO 10</a> <!-- RETO 10 -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+    <section>
+        <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/mujercrossfit2.png" class="d-block w-100" alt="Mujer haciendo crossfit">
+            </div>
+            <div class="carousel-item">
+                <img src="images/hombresejercitandose2.png" class="d-block w-100" alt="Hombre brincando cuerda">
+            </div>
+            <div class="carousel-item">
+                <img src="images/personashaciendoyoga2.png" class="d-block w-100" alt="Personas haciendo yoga">
+            </div>
+            </div>
+            
+        </div> -->
+        <div class="text-center mt-5">
+            <h1 class="titulo1">Ubicaciones en Costa Rica</h1>
+            <img class="logo" src="images/logogym.png" alt="">
+        </div>
+    
+        <div class="container mt-5 mb-5 searchCont">
+            <!-- <div class="input-group">
+                <input type="text" id="searchInput" class="searchInput form-control" placeholder="Buscar sucursales">
+                <div class="input-group-append">
+                    <button class="searchInput searchIcon" type="button" onclick="searchStores()">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </div>
+            </div> -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar sucursales" aria-label="Buscar" id="searchInput">
+              <button class="btn btn-outline-success" type="button" onclick="searchStores()">Buscar</button>
+            </form>
+    
+            <p id="pResult" class="resultado mt-4"></p>
+        </div>
+    </section>
+
+    <script src="js/buscador.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- libreria SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <footer>
+        <div class="footer-container-contact">
+          <div>
+            <p>© 2024 Derechos reservados</p>
+          </div>
+        </div>
+        <div class="footer-container-contact">
+            <div> 
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+                <p>fitnessplacecr@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-container-contact">
+            <div>
+                <a class="footer-container-contact" href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-lg"></i></a>  
+            </div>
+            <div>
+                <a class="footer-container-contact" href="https://www.facebook.com"><i class="fa-brands fa-square-facebook fa-lg"></i></a>
+            </div>
+            <div>
+                <a class="footer-container-contact" href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
