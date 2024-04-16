@@ -39,7 +39,7 @@ function login () {
                 html: '<iframe width="420" height="340" src="https://lottie.host/embed/cf2d7c0b-1809-424d-8421-fd1d0b74159b/Ed9jRpjvF6.json"></iframe><br><br><p>Espera un momento por favor</p>',
 
             }).then(() => {
-                window.location.href = "https://www.smartfit.cr/","blank";
+                window.location.href = "index.html","blank";
             }); 
         } else {
             text = "Usuario o contraseña incorrecta";

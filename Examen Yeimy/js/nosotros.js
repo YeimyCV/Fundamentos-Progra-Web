@@ -69,14 +69,21 @@ let cambiar = function(mas) {
     total = carrusel.length;
     foto = foto + mas;
     if (foto > total) {
-        foto -1
+        foto=  foto - 1 ;
     }
     if (foto < 1) {
-        foto - total;
+        foto= foto - total;
+    }
+    if(foto>=0){
+        document.thumb.src = carrusel[foto - 1].imageurl;
+        titulo - document.getElementById('titulo');
+        titulo.innerText = carrusel[foto-1 ].titulo;
+    }
+    else{
+        foto= 0 ;
+        foto = foto + 1
     }
 
-    document.thumb.src = carrusel[foto - 1].imageurl;
-    titulo - document.getElementById('titulo');
-    titulo.innerText = carrusel[foto - 1].titulo;
+   
 }
 

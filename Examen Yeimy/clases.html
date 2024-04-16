@@ -1,118 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fitness Place | Clases </title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon.png">
-    </head>
-  
-  <body>
-    <header >
-      <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="index.html"><img class="logoBlanco" src="images/logogymblanco.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse ms-auto me-5" id="navbarNavDropdown">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="login.html">Iniciar sesión</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="clases.html">Clases</a>
-                <li class="nav-item">
-                  <a class="nav-link" href="membrecias.html">Membrecías</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="galeria.html">Galería</a> 
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contacto</a> 
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-    </header>
-    <div class="container text-center mt-5 mb-5">
-        <h1 class="display-2">Clases disponibles</h1>
-        <div class="text-center pt-3 clases_img_container">
-            <img src="images/clasesgeneral.jpg" alt="Accesorios para ejercicio" class="img-fluid">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Place | Clases </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-auto me-5" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Iniciar sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="clases.html">Clases</a>
+            <li class="nav-item">
+              <a class="nav-link" href="membrecias.html">Membrecías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-6 d-flex align-items-center">
-                    <p class="container text-left pt-5 formato1">
-                        En Fitness Place nos esforzamos por ofrecerte lo mejor, además de nuestros servicios más allá de nuestro equipo e instalaciones,
-                        <br>incluye la disponibilidad de distintas clases semanales entre las que puedes elegir.
-                    </p>
-                </div>
-                <div class="col-md-12 col-lg-6">
-                    <select id="foto" class="mt-5 selectclases mb-5 form-select w-75">  
-                        <option disabled hidden selected>Seleccione una clase que te interese</option>
-                        <option value="1">Yoga</option>
-                        <option value="2">Boxeo</option>
-                        <option value="3">Spinning</option>
-                        <option value="4">Crossfit</option>
-                    </select>
-                    <div id="resultado" class="resultadoclases img-fluid"></div>
-                    <p id="descripcion" class="text-left formato1"></p>
-                </div>
-            </div>
-        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container text-center mt-5 mb-5">
+    <h1 class="display-2">Clases disponibles</h1>
+    <div class="text-center pt-3 clases_img_container">
+      <img src="images/clasesgeneral.jpg" alt="Accesorios para ejercicio" class="img-fluid">
     </div>
-    <footer>
-        <div class="footer-container-contact">
-          <div>
-            <p>© 2024 Derechos reservados</p>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 d-flex align-items-center">
+          <p class="container text-left pt-5 formato1">
+            En Fitness Place nos esforzamos por ofrecerte lo mejor, además de nuestros servicios más allá de nuestro
+            equipo e instalaciones,
+            <br>incluye la disponibilidad de distintas clases semanales entre las que puedes elegir.
+          </p>
         </div>
-        <div class="footer-container-contact">
-            <div> 
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div>
-                <p>fitnessplacecr@gmail.com</p>
-            </div>
+        <div class="col-md-12 col-lg-6">
+          <select id="foto" class="mt-5 selectclases mb-5 form-select w-75">
+            <option disabled hidden selected>Seleccione una clase que te interese</option>
+            <option value="1">Yoga</option>
+            <option value="2">Boxeo</option>
+            <option value="3">Spinning</option>
+            <option value="4">Crossfit</option>
+          </select>
+          <div id="resultado" class="resultadoclases img-fluid"></div>
+          <p id="descripcion" class="text-left formato1"></p>
         </div>
-        <div class="footer-container-contact">
-            <div>
-                <a class="footer-container-contact" href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-lg"></i></a>  
-            </div>
-            <div>
-                <a class="footer-container-contact" href="https://www.facebook.com"><i class="fa-brands fa-square-facebook fa-lg"></i></a>
-            </div>
-            <div>
-                <a class="footer-container-contact" href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-lg"></i></a>
-            </div>
-        </div>
-    </footer>
-    <script src="js/clases.js"></script> 
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container-contact">
+      <div>
+        <p>© 2024 Derechos reservados</p>
+      </div>
+    </div>
+    <div class="footer-container-contact">
+      <div>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <div>
+        <p>fitnessplacecr@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-container-contact">
+      <div>
+        <a class="footer-container-contact" href="https://www.instagram.com"><i
+            class="fa-brands fa-instagram fa-lg"></i></a>
+      </div>
+      <div>
+        <a class="footer-container-contact" href="https://www.facebook.com"><i
+            class="fa-brands fa-square-facebook fa-lg"></i></a>
+      </div>
+      <div>
+        <a class="footer-container-contact" href="https://www.youtube.com"><i
+            class="fa-brands fa-youtube fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/clases.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
-   
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init({
+              publicKey: "BoW3KZzD6tKyGY6Ac",
+          });
+      })();
+  </script>
+  <script>
+      window.addEventListener("load", function (event) {
+        var random =  Math.floor(Math.random() * 10);
+
+        if(random === 5){
+          encuesta();
+        }
+  });
+    
+    function encuesta() {
+      Swal.fire({
+        title: "<strong><u>¡Queremos escuchar tu opinión!</u></strong>",
+        icon: "info",
+        width: "52em",
+        html: `
+                <form style="background-color: transparent; border: none;">
+            <div class="container" style="background-color:white">
+                <div class="form-group" style="text-align:left;">
+                    <label class="fw-bold">¿Qué influye más en tu decisión de elegir un gimnasio?</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsDes" id="desinlineRadio1"
+                        value="Horarios">
+                    <label class="form-check-label" for="desinlineRadio1">Horarios</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsDes" id="desinlineRadio2"
+                        value="Clases">
+                    <label class="form-check-label" for="desinlineRadio2">Clases</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsDes" id="desinlineRadio3"
+                        value="Entrenadores">
+                    <label class="form-check-label" for="desinlineRadio3">Entrenadores</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsDes" id="desinlineRadio4"
+                        value="Instalaciones">
+                    <label class="form-check-label" for="desinlineRadio4">Instalaciones</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsDes" id="desinlineRadio5"
+                        value="Calidad de equipos">
+                    <label class="form-check-label" for="desinlineRadio5">Calidad de equipos</label>
+                </div>
+                <br><br>
+                <div class="text-start">
+                <div class="form-group" style="text-align:left;">
+                    <label class="fw-bold">¿Cuántas veces a la semana realizas actividad física?</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsCuat" id="cuatinlineRadio1"
+                        value="1 a 2">
+                    <label class="form-check-label" for="cuantinlineRadio1">1 a 2</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsCuat" id="cuatinlineRadio2"
+                        value="3 a 5">
+                    <label class="form-check-label" for="cuantinlineRadio2">3 a 5</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsCuat" id="cuatinlineRadio3"
+                        value="más de 5">
+                    <label class="form-check-label" for="cuantinlineRadio3">más de 5</label>
+                </div>
+                </div>
+                <br><br>
+                <div class="text-start">
+                <div class="form-group" style="text-align:left;">
+                    <label class="fw-bold">¿Has experimentado algún tipo de acoso mientras te ejercitabas en un gimnasio?</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsAcoso" id="acosoinlineRadio1"
+                        value="Si">
+                    <label class="form-check-label" for="acosoinlineRadio1">Si</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsAcoso" id="acosoinlineRadio2"
+                        value="No">
+                    <label class="form-check-label" for="acosoinlineRadio2">No</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsAcoso" id="acosoinlineRadio3"
+                        value="No voy al gimnasio aún">
+                    <label class="form-check-label" for="acosoinlineRadio3">No voy al gimnasio aún</label>
+                </div>
+                </div>
+                <br><br>
+                <div class="form-group" style="text-align:left;">
+                    <label class="fw-bold">¿Cuanto te parece un precio razonable de membrecía mensual?</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsPrecio" id="precioinlineRadio1"
+                        value="Menos de 20 mil colones">
+                    <label class="form-check-label" for="precioinlineRadio1">Menos de 20 mil colones</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsPrecio" id="precioinlineRadio2"
+                        value="Entre 20 y 30 mil colones">
+                    <label class="form-check-label" for="precioinlineRadio2">Entre 20 y 30 mil colones</label>
+                </div>
+                <div class="form-check form-check-inline" style="text-align:left;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsPrecio" id="precioinlineRadio3"
+                        value="Más de 30 mil colones">
+                    <label class="form-check-label" for="precioinlineRadio3">Más de 30 mil colones</label>
+                </div>
+                <br><br>
+                <div class="form-group" style="text-align:left;">
+                    <label class="fw-bold">Déjanos cualquier comentario que nos pueda ayudar a mejorar tu experiencia con nosotros:</label>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Escribe tu mensaje"></textarea>
+                </div>   
+            </div>
+        </form>
+                `,
+        focusConfirm: false,
+        confirmButtonText: "Enviar",
+        showCancelButton: true,
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          const descision = document.querySelector('input[name="inlineRadioOptionsDes"]:checked').value;
+          const tiempo = document.querySelector('input[name="inlineRadioOptionsCuat"]:checked').value;
+          const acoso = document.querySelector('input[name="inlineRadioOptionsAcoso"]:checked').value;
+          const precio = document.querySelector('input[name="inlineRadioOptionsPrecio"]:checked').value;
+          const mensaje = document.getElementById('message').value;
+          const params = {
+            descision: descision,
+            tiempo: tiempo,
+            acoso: acoso,
+            precio: precio,
+            mensaje: mensaje
+          }
+          emailjs.send('service_2ovbwhb', 'template_dklrrcg', params)
+                .then(() => {
+                    console.log('SUCCESS!');
+                }, (error) => {
+                    console.log('FAILED...', error);
+                });
+          Swal.fire("Gracias por sus respuestas!", "", "success");
+        } else {
+          Swal.fire("Encuesta cancelada", "", "info");
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>

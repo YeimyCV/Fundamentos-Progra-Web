@@ -6,6 +6,10 @@
         .bg-body-tertiary {
             background-color: transparent !important;
         }
+        nav{
+            box-shadow: 0px 2px 5px 0px #959595;
+        }
+        
 
         .titulo2 {
             color: #fff;
@@ -58,9 +62,14 @@
         }
 
         .bg-body-tertiary{
-            background-color: #029802!important;
+            background-color: #fff!important;
             height: 100px;
-            color: #fff!important;
+        }
+        .nav-link{
+            color: #60A859!important;
+        }
+        .active{
+            color: #FFD700!important;
         }
 
         .centrar {
@@ -74,7 +83,7 @@
             display: flex;
             flex-direction: row;
             width: 100%;
-            background-color: #029802;
+            background-color: #60A859;
             height: 100px;
             align-items: center;
         }
@@ -91,7 +100,7 @@
             padding-right: 52px;
             padding: 20px 10px;
             font-size: 16px;
-            background-color: #029802;
+            background-color: #60A859;
             text-align: center;
             height: 100px;
             justify-content: space-around;
@@ -296,7 +305,11 @@ background-buscador {
     background-color: #00DD00;
 }
 .logo {
-    width: 270px;
+    width: 75px;
+}
+.language-img{
+    width: 32px;
+    margin-left: 15px;
 }
 .searchInput {
     width: 80%;
@@ -403,7 +416,7 @@ form {
 
 .selectclases {
     color: #fff;
-    background-color: #029802;
+    background-color: #60A859;
     font-size: 20px;
     padding: 8px 10px;
 }
@@ -450,8 +463,7 @@ option {
 
 .tab {
     overflow: hidden;
-    border: 2px solid #ccc;
-    background-color: #e4e4e4;
+    border-bottom: 2px solid #60A859;
 }
 
 p {
@@ -477,21 +489,18 @@ p {
 
 
 .tab button:hover {
-    background-color: green;
+    background-color:#60A859 ;
     color: #fff;
 }
 
 .tab button.active {
-    background-color: rgb(21, 239, 54);
-    color: #fff;
+    background-color: #228B22;
+    color: #fff!important;
 }
 
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 2px solid #ccc;
-    border-top: none;
-    background: #eee;
 }
 
 .tabcontent {
@@ -595,7 +604,7 @@ p {
 /*lightbox video*/
 
 #boton {
-    background-color: #029802;
+    background-color: #60A859;
     border: none;
     color: #fff;
     padding: 7px 15px;
@@ -604,6 +613,9 @@ p {
     letter-spacing: 2px;
     margin: 0;
     border-radius: 15px;
+}
+#boton:hover{
+    background-color:#228B22 ;
 }
 
 
@@ -635,7 +647,7 @@ p {
 
 .lightbox-close {
     background: transparent;
-    background-color: #029802;
+
     position: absolute;
     right: 7%;
     max-width: 960px;
@@ -688,7 +700,7 @@ a {
 }
 
 a:hover {
-    color: #029802;
+    color: #60A859;
 }
 
 model-viewer {
@@ -698,4 +710,129 @@ model-viewer {
     /*textura de fondo */
     /*background-image: url("../assets/textura3.avif");*/
     /* background-size: cover;*/
+}
+
+/* Contact-Form */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+
+.contact-form {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  margin: 50px 200px;
+}
+.contact-form > * {
+  width: 50%;
+}
+.contact-form .first-container {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/background-landing.jpg") center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form .first-container .info-container div {
+  margin: 24px 0;
+}
+.contact-form .first-container .info-container div h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-bottom: 10px;
+}
+.contact-form .first-container .info-container div:first-of-type p {
+  max-width: 260px;
+  color: #999;
+}
+.contact-form .first-container .info-container div p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #00ad5f;
+}
+.contact-form .second-container {
+  padding: 30px;
+}
+.contact-form .second-container h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-form .second-container form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form .second-container form .form-group {
+  margin-bottom: 10px;
+}
+.contact-form .second-container form .form-group * {
+  min-height: 55px;
+  border: 1px solid #e6e6e6;
+  padding: 0 20px;
+}
+.contact-form .second-container form .form-group label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  margin-top: -1px;
+}
+.contact-form .second-container form .form-group:first-of-type input {
+  width: 50.1%;
+  margin-right: -5px;
+}
+.contact-form .second-container form .form-group input {
+  width: 100%;
+  font-size: 15px;
+  margin-top: -2px;
+}
+.contact-form .second-container form .form-group input::placeholder, .contact-form .second-container form .form-group textarea::placeholder {
+  color: #999;
+}
+.contact-form .second-container form .form-group textarea {
+  width: 100%;
+  min-height: 80px;
+  resize: none;
+  padding: 10px 20px;
+  margin-top: -1px;
+}
+.contact-form .second-container form button {
+  width: 200px;
+  height: 50px;
+  background: #00ad5f;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0;
+  position: relative;
+  left: calc(50% - 100px);
+  cursor: pointer;
+}
+.contact-form .second-container form button:hover {
+  background: #333;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-form {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contact-form {
+    flex-direction: column-reverse;
+  }
+  .contact-form > * {
+    width: 100%;
+  }
+  .contact-form .first-container {
+    padding: 40px 0;
+  }
 }

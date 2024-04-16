@@ -30,7 +30,8 @@ y se almacena en la constante attr.*/
 
 
 link.forEach(r => {
-    r.addEventListener('click', () => {
+    r.addEventListener('click', (event) => {
+     console.log(event)
         const attr = r.getAttribute('language');
         menuHome.textContent = changeLanguage[attr].menuHome;
         menuUs.textContent = changeLanguage[attr].menuUs;

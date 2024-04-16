@@ -27,13 +27,14 @@
 }
 
 .item {
-    background: #029802;
+    background: #60A859;
     border: none;
     border-radius: 12px;
     padding: 15px;
     /*cursores web: https://www.w3schools.com/cssref/pr_class_cursor.asp*/
     /*permite mover los recuadros*/
     cursor: move;
+    min-height: 310px !important;
 }
 
 .item h3 {
@@ -86,7 +87,7 @@
     line-height: 1;
     font-weight: 700;
     font-size: 38px;
-    color: #029802;
+    color: #60A859;
     display: block;
     margin-bottom: 10px;
 }
