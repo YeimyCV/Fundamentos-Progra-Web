@@ -1,0 +1,75 @@
+:root {
+    --main-green-color: #60a859;
+    --main-yellow-color:#fbb74b;
+    --secondary-green-color:#004B1B;
+    --primary-plat-color:#598ea8;
+    --secondary-plat-color:#cce3f5;
+    --main-variant-green-color:#ccf5d1;
+    --main-red-color:#a8595c;
+    --secondary-red-color:#f5cccc;
+  }
+.text-p-green{
+  color: var(--main-green-color)!important;
+}
+.text-p-yellow{
+  color: var(--main-yellow-color);
+}
+.text-p-plat{
+  color: var(--primary-plat-color)!important;
+}
+.text-p-red{
+  color: var(--main-red-color)!important;
+}
+.bg-p-red{
+  background-color: var(--main-red-color);
+}
+.bg-s-red{
+  background-color: var(--secondary-red-color);
+}
+.vh-100{
+  height: 100vh;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+.icon-shape {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: .375rem;
+  width: 3rem;
+  height: 3rem;
+}
+.icon {
+  font-size: 1.7142857143rem;
+  line-height: 1;
+}
+.bg-p-plat{
+  background-color: var(--primary-plat-color);
+}
+.bg-s-plat {
+  background-color: var(--secondary-plat-color);
+}
+.bg-p-green {
+  background-color: var(--main-green-color);
+}
+.bg-s-green {
+  background-color: var(--main-variant-green-color);
+}
+.badge {
+  display: inline-block;
+  padding: .2rem .6rem;
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .375rem;
+}
+.active{
+  background-color: var(--main-green-color)!important;
+}
