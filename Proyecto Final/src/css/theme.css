@@ -73,3 +73,16 @@
 .active{
   background-color: var(--main-green-color)!important;
 }
+.btn-green{
+  background-color: var(--main-green-color)!important;
+  color: #fff!important;
+}
+.btn-green:hover{
+  background-color: var(--secondary-green-color)!important;
+}
+.hiddenElm{
+  display: none;
+}
+.dt-paging-button:hover {
+background: var(--main-green-color)!important;
+}

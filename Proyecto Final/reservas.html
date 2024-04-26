@@ -10,7 +10,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.dataTables.css" />
-
+  <link rel="icon" href="src/img/logo.png">
   <title>Reservas</title>
 </head>
 
@@ -44,7 +44,7 @@
             <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
               id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
               <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-              <strong>Jhon Doe</strong>
+              <strong id="nombreUsuario"></strong>
             </a>
             <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
               <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -59,7 +59,50 @@
         </div>
       </main>
       <div class="col-10 vh-100" style="overflow-y: scroll;">
-        <input id="endDate" class="form-control" type="date" />
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mt-4 text-muted mb-4">Reservaciones</h2>
+            <div class="form-floating mb-3">
+              <select class="form-select" aria-label="Default select example" id="tipoReserva" onchange="validarTipo()">
+                <option value="0">Seleccione el tipo de reserva</option>
+                <option value="1">Instalaciones</option>
+                <option value="2">Clases</option>
+              </select>
+              <label for="tipoReserva">Tipo de Reserva</label>
+            </div>
+            <div class="row mb-3">
+              <div class="col-6">
+                <div class="form-floating">
+                  <input type="date" class="form-control" id="fechaInicio" onchange="ValidarFechas()">
+                  <label for="fechaInicio">Fecha inicio</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-floating">
+                  <input type="date" class="form-control" id="fechaSalida" onchange="ValidarFechas()">
+                  <label for="fechaSalida">Fecha salida</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-floating mb-3 hiddenElm" id="insCont">
+              <select class="form-select" aria-label="Default select example" id="instalacion" onchange="validarReserva()">
+                <option selected value="0">Seleccione el lugar</option>
+                <!-- <option value="1">Pesas</option>
+                <option value="2">Spinning</option> -->
+              </select>
+              <label for="instalacion">Instalación</label>
+            </div>
+            <div class="form-floating mb-3 hiddenElm" id="claCont" onchange="validarReserva()">
+              <select class="form-select" aria-label="Default select example" id="clase">
+                <option selected value="0">Seleccione la clase</option>
+                <!-- <option value="1">Yoga</option>
+                <option value="2">Aerobicos</option> -->
+              </select>
+              <label for="clase">Clase</label>
+            </div>
+            <button class="btn btn-green w-100" style="height: 50px;" disabled id="reservar" onclick="crearReserva()">Reservar</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -70,7 +113,9 @@
     crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/2.0.5/js/dataTables.js"></script>
-    <script src="src/js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="src/js/reservas.js"></script>
 </body>
 
 </html>
