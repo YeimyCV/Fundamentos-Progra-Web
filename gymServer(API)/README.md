@@ -4,12 +4,6 @@
 API encargada de las reservas y el login
 
 
-
-## Documentation
-
-[Documentation](https://linktodocumentation)
-
-
 ## Deployment
 1.Abra la raiz del proyecto en una terminal
 2.Ejecute el comando
